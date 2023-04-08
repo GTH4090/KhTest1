@@ -1,0 +1,19 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="KhranitelDesktop.Pages.VisitPage">
+    <Grid RowDefinitions="Auto, Auto, *, Auto, *, Auto, Auto" ColumnDefinitions="*, 150, *">
+        <Label Content="Страница подачи заявки"/>
+        
+        <Border HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="#FF6600" 
+                Grid.Row="1" Grid.ColumnSpan="2">
+            <Label Content=""/>
+        </Border>
+        <StackPanel Background="LightGrey" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                    Grid.Row="2" Grid.ColumnSpan="2">
+            
+        </StackPanel>
+    </Grid>
+</UserControl>

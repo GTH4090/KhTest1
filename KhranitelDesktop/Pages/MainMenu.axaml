@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="KhranitelDesktop.Pages.MainMenu">
+    <Grid RowDefinitions="Auto, *, Auto">
+        <DataGrid Name="VisitDg" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="FinalDate" Binding="{Binding Finaldate}"/>
+                <DataGridTextColumn Header="FinalTime" Binding="{Binding Finaltime}"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status.Name}"/>
+                <DataGridTextColumn Header="Type" Binding="{Binding TypeResolver.Name}"/>
+                <DataGridTextColumn Header="Division" Binding="{Binding Employee.Division.Name}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Row="2" HorizontalAlignment="Center">
+            <Button Name="VisitBtn" Content="Подать личную заявку" Click="VisitBtn_OnClick"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
